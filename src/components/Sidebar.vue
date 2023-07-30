@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SidebarButton from "./SidebarButton.vue";
+import Button from "./Button.vue";
 </script>
 
 <template>
@@ -14,9 +15,7 @@ import SidebarButton from "./SidebarButton.vue";
 
     <hr class="border-slate-900">
 
-    <button class="self-center w-fit bg-emerald-500 rounded px-4 py-2 font-body text-slate-950 text-xs">
-      Start a new habit
-    </button>
+    <Button text="Start a new habit" class="self-center" />
 
     <div class="grow"></div>
 
