@@ -4,7 +4,7 @@ import Greet from "./components/Greet.vue";
 </script>
 
 <template>
-  <div class="w-screen h-screen bg-slate-950 flex flex-row">
+  <div class="w-screen h-screen bg-slate-950 flex flex-row font-body text-xs">
     <Sidebar />
     <Greet />
   </div>
