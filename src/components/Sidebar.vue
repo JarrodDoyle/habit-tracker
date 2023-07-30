@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SidebarButton from "./SidebarButton.vue";
 </script>
 
 <template>
@@ -6,27 +7,10 @@
     <div class="font-display text-xl px-1 py-2 self-center"><span class="text-emerald-500">Habit</span> Tracker</div>
     <hr class="border-slate-900">
 
-    <!-- TODO: Extract to a component -->
-    <button
-      class="bg-slate-800 rounded flex flex-row text-white p-2 space-x-2 items-center hover:bg-slate-900 active:bg-slate-700">
-      <img src="icons/today-outline-20-white.svg" alt="Today Icon" />
-      <span class="font-body text-xs">Today</span>
-    </button>
-
-    <button class="rounded flex flex-row text-white p-2 space-x-2 items-center hover:bg-slate-900 active:bg-slate-700">
-      <img src="icons/social-leaderboard-outline-20-white.svg" alt="Today Icon" />
-      <span class="font-body text-xs">Habits</span>
-    </button>
-
-    <button class="rounded flex flex-row text-white p-2 space-x-2 items-center hover:bg-slate-900 active:bg-slate-700">
-      <img src="icons/interests-outline-20-white.svg" alt="Today Icon" />
-      <span class="font-body text-xs">Categories</span>
-    </button>
-
-    <button class="rounded flex flex-row text-white p-2 space-x-2 items-center hover:bg-slate-900 active:bg-slate-700">
-      <img src="icons/settings-outline-20-white.svg" alt="Today Icon" />
-      <span class="font-body text-xs">Settings</span>
-    </button>
+    <SidebarButton icon="icons/today-outline-20-white.svg" text="Today" selected />
+    <SidebarButton icon="icons/social-leaderboard-outline-20-white.svg" text="Habits" />
+    <SidebarButton icon="icons/interests-outline-20-white.svg" text="Categories" />
+    <SidebarButton icon="icons/settings-outline-20-white.svg" text="Settings" />
 
     <hr class="border-slate-900">
 
