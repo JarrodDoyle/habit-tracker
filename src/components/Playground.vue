@@ -7,7 +7,7 @@ import IconButton from "./buttons/IconButton.vue"
 
 <template>
     <div class="p-4">
-        <Panel class="w-52">
+        <Panel class="w-60">
             <div class="flex flex-col space-y-3 w-full">
                 <Button text="Button" />
                 <FixedButton text="Fixed Button" />
@@ -17,9 +17,15 @@ import IconButton from "./buttons/IconButton.vue"
                 <FixedButton grey text="Fixed Grey Button" />
                 <Button grey icon="icons/settings-outline-20-white.svg" text="Grey With Icon" />
 
-                <IconButton icon="icons/settings-outline-20-white.svg" />
-                <IconButton grey icon="icons/settings-outline-20-white.svg" />
+                <Button danger text="Danger Button" />
+                <FixedButton danger text="Fixed Danger Button" />
+                <Button danger icon="icons/settings-outline-20-white.svg" text="Danger With Icon" />
 
+                <div class="flex flex-row space-x-3 w-full">
+                    <IconButton icon="icons/settings-outline-20-white.svg" />
+                    <IconButton grey icon="icons/settings-outline-20-white.svg" />
+                    <IconButton danger icon="icons/settings-outline-20-white.svg" />
+                </div>
             </div>
         </Panel>
     </div>
