@@ -10,10 +10,10 @@ import Button from "./buttons/Button.vue";
     </div>
     <hr class="border-slate-900">
 
-    <SidebarButton icon="icons/today-outline-20-white.svg" text="Today" selected />
-    <SidebarButton icon="icons/social-leaderboard-outline-20-white.svg" text="Habits" />
-    <SidebarButton icon="icons/interests-outline-20-white.svg" text="Categories" />
-    <SidebarButton icon="icons/settings-outline-20-white.svg" text="Settings" />
+    <SidebarButton icon="today" text="Today" selected />
+    <SidebarButton icon="social_leaderboard" text="Habits" />
+    <SidebarButton icon="interests" text="Categories" />
+    <SidebarButton icon="settings" text="Settings" />
 
     <hr class="border-slate-900">
 
@@ -21,11 +21,7 @@ import Button from "./buttons/Button.vue";
 
     <div class="grow"></div>
 
-    <button
-      class="rounded flex flex-row text-slate-600 p-2 space-x-2 items-center hover:bg-slate-900 active:bg-slate-700">
-      <img src="icons/bug-report-outline-20-grey.svg" alt="Today Icon" />
-      <span>Report a bug</span>
-    </button>
+    <SidebarButton icon="bug_report" text="Report a bug" class="text-slate-600 hover:text-white" />
 
     <hr class="border-slate-900">
 
