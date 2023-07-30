@@ -8,6 +8,9 @@ dependencies:
   '@tauri-apps/api':
     specifier: ^1.4.0
     version: 1.4.0
+  material-symbols:
+    specifier: ^0.10.2
+    version: 0.10.2
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -878,6 +881,10 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  /material-symbols@0.10.2:
+    resolution: {integrity: sha512-iwWd/+NmYPlhAdYay5tQl6PF9wfd7YIeJaWcEr8yxNyuVcKQzNY7PqjTWLYZqRpXvTIPo9J6okJDl7Gg6Xvgjw==}
+    dev: false
 
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
