@@ -2,7 +2,6 @@
 import Panel from "./Panel.vue"
 import Button from "./buttons/Button.vue"
 import FixedButton from "./buttons/FixedButton.vue"
-import IconButton from "./buttons/IconButton.vue"
 </script>
 
 <template>
@@ -21,10 +20,10 @@ import IconButton from "./buttons/IconButton.vue"
                 <FixedButton danger text="Fixed Danger Button" />
                 <Button danger icon="settings" text="Danger With Icon" />
 
-                <div class="flex flex-row space-x-3 w-full">
-                    <IconButton icon="settings" />
-                    <IconButton grey icon="settings" />
-                    <IconButton danger icon="settings" />
+                <div class="flex flex-row space-x-3">
+                    <Button icon="settings" />
+                    <Button grey icon="settings" />
+                    <Button danger icon="settings" />
                 </div>
             </div>
         </Panel>
